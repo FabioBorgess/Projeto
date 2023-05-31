@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Cadastro</title>
+</head>
+
+<body>
+    
+    <!--abaixo foi criado uma <div class "formulario sendo a div Pai>, para facilitar no css."-->
+
+    <div class="formulario">
+
+        <form action="#"> <!-- comando sem ação para PHP futuramente-->
+
+            <div class="title">
+                <h2>Cadastre-se</h2>
+            </div>
+
+<!--Abaixo segue a div input-box para todos os campos do cadastro geral , foi usado as tags, <label> para rotular, a tag <placeholder> para ficar a marca d'água dentro de cada campo com o que deve ser inserido e a tag <required> para deixar os campos obrigatórios -->
+
+            <div class="input-box">
+                <label for="name">Nome:</label>
+                <input id="name" type="text" name="name" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="input-box">
+                <label for="email">E-mail:</label>
+                <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+
+            <div class="input-box">
+                <label for="number">Celular:</label>
+                <input id="number" type="tel" minlength="10" maxlength="11" name="number" placeholder="(xx) xxxx-xxxx" required>
+            </div>
+
+            <div class="input-box">
+                <label for="password">Senha:</label>
+                <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+            </div>
+
+
+            <div class="input-box">
+                <label for="confirmPassword">Confirme sua Senha:</label>
+                <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
+            </div>
+
+            <!--Abaixo segue a <div class="login-button> <button> para criar o botão"-->
+
+            <div class="continue-button">
+                <button><a href="#">Criar</a> </button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
